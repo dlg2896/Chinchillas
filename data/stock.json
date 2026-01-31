@@ -1,0 +1,38 @@
+{
+  "lastUpdated": "2024-06-15",
+  "items": [
+    {
+      "name": "Luna",
+      "nameZh": "露娜",
+      "meta": "Gray, female, 6 months · Calm temperament",
+      "metaZh": "灰色 · 母 · 6个月 · 性格温和",
+      "price": "$350",
+      "priceZh": "¥350 或 $350",
+      "status": "available",
+      "note": "Includes starter care kit.",
+      "noteZh": "含入门护理用品。"
+    },
+    {
+      "name": "Milo",
+      "nameZh": "米洛",
+      "meta": "Mosaic, male, 9 months · Playful",
+      "metaZh": "花色 · 公 · 9个月 · 活泼",
+      "price": "$380",
+      "priceZh": "¥380 或 $380",
+      "status": "reserved",
+      "note": "Reserved until July 2.",
+      "noteZh": "已预订至7月2日。"
+    },
+    {
+      "name": "Nova",
+      "nameZh": "诺瓦",
+      "meta": "Beige, female, 5 months · Friendly",
+      "metaZh": "米色 · 母 · 5个月 · 亲人",
+      "price": "$340",
+      "priceZh": "¥340 或 $340",
+      "status": "sold",
+      "note": "Going home on June 20.",
+      "noteZh": "将于6月20日交付。"
+    }
+  ]
+}

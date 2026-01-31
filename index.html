@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue Ridge Chinchillas | 蓝岭龙猫</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div>
+          <p class="kicker" data-i18n="kicker">Virginia • East Coast • Family-run</p>
+          <h1 data-i18n="title">Blue Ridge Chinchillas</h1>
+          <p class="subtitle" data-i18n="subtitle">
+            Healthy, hand-raised chinchillas with a calm home environment.
+          </p>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-button" data-lang="en">English</button>
+          <button class="lang-button" data-lang="zh">中文</button>
+        </div>
+      </div>
+      <div class="cta-panel">
+        <div>
+          <h2 data-i18n="ctaTitle">Simple, friendly buying for busy owners</h2>
+          <p data-i18n="ctaBody">
+            We focus on small-batch, ethical breeding. Stock changes often, so we keep this site
+            updated in real time.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="primary" href="#stock" data-i18n="ctaPrimary">See available chinchillas</a>
+          <a class="ghost" href="#contact" data-i18n="ctaSecondary">Ask a question</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="info-grid" id="about">
+        <article>
+          <h3 data-i18n="aboutTitle">About the home</h3>
+          <p data-i18n="aboutBody">
+            We are a single-person, home-based business in Virginia with climate-controlled rooms,
+            daily handling, and a calm environment. We serve families in Virginia and nearby states
+            along the East Coast.
+          </p>
+          <ul>
+            <li data-i18n="aboutBullet1">Health-first breeding and vet-supported care.</li>
+            <li data-i18n="aboutBullet2">Friendly with children and first-time owners.</li>
+            <li data-i18n="aboutBullet3">Pickup and local delivery coordination.</li>
+          </ul>
+        </article>
+        <article>
+          <h3 data-i18n="promiseTitle">What every buyer gets</h3>
+          <ul>
+            <li data-i18n="promise1">Health history, diet plan, and care guide (Chinese + English).</li>
+            <li data-i18n="promise2">Clear pricing and deposit options.</li>
+            <li data-i18n="promise3">Ongoing support after pickup via WeChat or text.</li>
+            <li data-i18n="promise4">A clean, local pickup process with flexible scheduling.</li>
+          </ul>
+        </article>
+        <article>
+          <h3 data-i18n="trustTitle">Trust and safety</h3>
+          <ul>
+            <li data-i18n="trust1">Transparent updates on births, growth stages, and temperament.</li>
+            <li data-i18n="trust2">Photo and video updates before pickup.</li>
+            <li data-i18n="trust3">Strict separation of litters, quarantine for new arrivals.</li>
+            <li data-i18n="trust4">Privacy-first customer handling. No public buyer info.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="stock" id="stock">
+        <div class="section-heading">
+          <h2 data-i18n="stockTitle">Available chinchillas</h2>
+          <p data-i18n="stockBody">
+            Inventory changes weekly. Reserve now to hold a chinchilla for pickup in 3–7 days.
+          </p>
+        </div>
+        <div class="filters">
+          <label class="toggle">
+            <input type="checkbox" id="availableOnly" checked />
+            <span data-i18n="availableOnly">Show available only</span>
+          </label>
+          <span class="updated" id="lastUpdated"></span>
+        </div>
+        <div class="stock-grid" id="stockGrid"></div>
+      </section>
+
+      <section class="feature-stack" id="features">
+        <div class="section-heading">
+          <h2 data-i18n="featureTitle">Features that make this site better</h2>
+          <p data-i18n="featureBody">
+            We designed the experience to be clearer, more transparent, and more helpful than other
+            animal sales sites.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <div>
+            <h3 data-i18n="feature1Title">Real-time availability</h3>
+            <p data-i18n="feature1Body">
+              Update a single JSON file to add, edit, or remove chinchillas. The site updates
+              instantly without technical steps.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="feature2Title">Two-language experience</h3>
+            <p data-i18n="feature2Body">
+              Every section is bilingual with a one-click toggle so Chinese-speaking families feel
+              welcomed.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="feature3Title">Buyer education</h3>
+            <p data-i18n="feature3Body">
+              Clear care guides, pickup checklist, and diet reminders are included with every sale.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="feature4Title">Trust-first transparency</h3>
+            <p data-i18n="feature4Body">
+              Each listing shows age, weight range, temperament notes, and vet checks.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="feature5Title">Flexible pickup & delivery</h3>
+            <p data-i18n="feature5Body">
+              Built-in scheduling suggestions for Virginia, Maryland, DC, and North Carolina.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="feature6Title">Secure payments ready</h3>
+            <p data-i18n="feature6Body">
+              Designed to integrate with Stripe, Square, or WeChat Pay for deposits and full
+              payments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-to" id="how-to">
+        <div class="section-heading">
+          <h2 data-i18n="howTitle">How to update stock (super easy)</h2>
+          <p data-i18n="howBody">
+            Open the <code>data/stock.json</code> file and edit the lines for each chinchilla. No
+            coding required.
+          </p>
+        </div>
+        <ol>
+          <li data-i18n="howStep1">Open <code>data/stock.json</code> in any text editor.</li>
+          <li data-i18n="howStep2">Change the name, price, and status fields.</li>
+          <li data-i18n="howStep3">Save the file — the website updates immediately.</li>
+        </ol>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="section-heading">
+          <h2 data-i18n="faqTitle">Common questions</h2>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary data-i18n="faq1Q">Do you offer delivery?</summary>
+            <p data-i18n="faq1A">
+              Local delivery is available within a 1–2 state radius of Virginia, depending on
+              schedule and weather.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faq2Q">How do deposits work?</summary>
+            <p data-i18n="faq2A">
+              Deposits reserve a chinchilla for 7 days. Balance is due at pickup. We accept cash,
+              Zelle, and WeChat Pay when available.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="faq3Q">Can I meet the chinchilla first?</summary>
+            <p data-i18n="faq3A">
+              Yes. We can schedule a short meet-and-greet, usually evenings or weekends.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="section-heading">
+          <h2 data-i18n="contactTitle">Reserve or ask a question</h2>
+          <p data-i18n="contactBody">
+            Send a request and we will respond within 24 hours. Include the chinchilla name from the
+            listing.
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span data-i18n="contactName">Your name</span>
+            <input type="text" name="name" placeholder="Li Mei" required />
+          </label>
+          <label>
+            <span data-i18n="contactEmail">Email or WeChat ID</span>
+            <input type="text" name="contact" placeholder="wechat: blue-ridge" required />
+          </label>
+          <label>
+            <span data-i18n="contactMessage">Message</span>
+            <textarea name="message" rows="4" placeholder="I want to reserve..." required></textarea>
+          </label>
+          <button type="button" class="primary" data-i18n="contactButton">Send request</button>
+          <p class="form-note" data-i18n="contactNote">
+            This form is ready for your email or CRM integration.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footerText">
+        © 2024 Blue Ridge Chinchillas · Virginia · WeChat available · Serving East Coast families
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
