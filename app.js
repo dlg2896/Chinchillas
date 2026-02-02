@@ -24,6 +24,12 @@ const translations = {
     trust2: "Photo and video updates before pickup.",
     trust3: "Strict separation of litters, quarantine for new arrivals.",
     trust4: "Privacy-first customer handling. No public buyer info.",
+    galleryTitle: "Meet the fluffiest crew",
+    galleryBody:
+      "We share frequent photos so you can see temperament, fluff, and personality before you choose.",
+    galleryCaption1: "Soft, calm, and curious.",
+    galleryCaption2: "Playful energy with gentle handling.",
+    galleryCaption3: "Cuddle-ready and family friendly.",
     stockTitle: "Available chinchillas",
     stockBody: "Inventory changes weekly. Reserve now to hold a chinchilla for pickup in 3–7 days.",
     availableOnly: "Show available only",
@@ -95,6 +101,11 @@ const translations = {
     trust2: "交付前提供照片与视频。",
     trust3: "严格分栏饲养，新到个体隔离观察。",
     trust4: "保护客户隐私，不公开买家信息。",
+    galleryTitle: "超萌龙猫照片墙",
+    galleryBody: "我们持续更新照片与视频，方便您感受性格与亲人程度。",
+    galleryCaption1: "柔软温柔，安静好相处。",
+    galleryCaption2: "活泼好奇，适合互动。",
+    galleryCaption3: "抱抱党最爱，家庭友好。",
     stockTitle: "现有龙猫",
     stockBody: "库存每周更新，可预订并在3–7天内安排交付。",
     availableOnly: "仅显示可购买",
@@ -192,6 +203,11 @@ const renderStock = () => {
     const card = document.createElement("article");
     card.className = "stock-card";
 
+    const image = document.createElement("img");
+    image.src = item.image;
+    image.alt = activeLang === "zh" ? item.imageAltZh : item.imageAlt;
+    image.loading = "lazy";
+
     const badge = document.createElement("span");
     badge.className = `badge ${item.status}`;
     badge.textContent = statusLabel(item.status);
@@ -210,7 +226,7 @@ const renderStock = () => {
     note.className = "muted";
     note.textContent = activeLang === "zh" ? item.noteZh : item.note;
 
-    card.append(badge, title, meta, price, note);
+    card.append(image, badge, title, meta, price, note);
     stockGrid.appendChild(card);
   });
 };

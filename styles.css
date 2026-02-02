@@ -6,8 +6,10 @@
   --card: #ffffff;
   --text: #1f2144;
   --muted: #6c6f8f;
-  --accent: #ff7f50;
-  --border: #e1e4f0;
+  --accent: #ff93c5;
+  --border: #ebe8f8;
+  --pink-glow: rgba(255, 182, 213, 0.5);
+  --blue-glow: rgba(180, 200, 255, 0.5);
   font-family: "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
@@ -20,11 +22,13 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  background-image: radial-gradient(circle at top, #fff7fb 0%, transparent 45%),
+    radial-gradient(circle at 20% 20%, #f1f5ff 0%, transparent 40%);
 }
 
 .site-header {
   padding: 48px 8vw 32px;
-  background: linear-gradient(135deg, #e8ebff 0%, #fff2e8 100%);
+  background: linear-gradient(135deg, #ffe6f2 0%, #e6f0ff 50%, #fff9e6 100%);
 }
 
 .brand {
@@ -88,7 +92,23 @@ h1 {
   align-items: center;
   gap: 24px;
   justify-content: space-between;
-  box-shadow: 0 16px 40px rgba(31, 33, 68, 0.08);
+  box-shadow: 0 16px 40px rgba(255, 162, 205, 0.18), 0 12px 26px rgba(84, 116, 255, 0.12);
+  border: 1px solid rgba(255, 182, 213, 0.4);
+}
+
+.cta-image {
+  flex: 0 0 160px;
+  display: grid;
+  place-items: center;
+  background: #fff6fb;
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 0 10px 20px rgba(255, 159, 208, 0.2);
+}
+
+.cta-image img {
+  width: 140px;
+  height: auto;
 }
 
 .cta-actions {
@@ -109,6 +129,7 @@ h1 {
 .primary {
   background: var(--primary);
   color: #fff;
+  box-shadow: 0 8px 20px rgba(74, 78, 255, 0.3);
 }
 
 .primary:hover {
@@ -139,6 +160,7 @@ main {
   padding: 20px;
   border-radius: 16px;
   border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(255, 183, 213, 0.12);
 }
 
 section {
@@ -171,6 +193,14 @@ section {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: 0 12px 22px rgba(180, 200, 255, 0.18);
+}
+
+.stock-card img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 182, 213, 0.4);
+  background: #fff6fb;
 }
 
 .badge {
@@ -203,6 +233,38 @@ section {
   gap: 12px;
 }
 
+.muted {
+  color: var(--muted);
+  margin: 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.gallery figure {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 24px rgba(255, 182, 213, 0.18);
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.gallery figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .toggle {
   display: flex;
   gap: 8px;
@@ -218,6 +280,7 @@ section {
   border-radius: 16px;
   padding: 20px 28px;
   border: 1px solid var(--border);
+  box-shadow: 0 10px 20px rgba(255, 182, 213, 0.12);
 }
 
 .faq-grid {
@@ -231,6 +294,7 @@ details {
   padding: 16px;
   border-radius: 12px;
   border: 1px solid var(--border);
+  box-shadow: 0 10px 20px rgba(180, 200, 255, 0.16);
 }
 
 .contact-form {
@@ -241,6 +305,7 @@ details {
   display: grid;
   gap: 16px;
   max-width: 560px;
+  box-shadow: 0 18px 32px rgba(255, 182, 213, 0.16);
 }
 
 .contact-form label {
