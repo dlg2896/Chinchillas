@@ -1,0 +1,19 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe8e0" />
+      <stop offset="100%" stop-color="#e8f9ff" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="36" fill="url(#bg4)" />
+  <circle cx="320" cy="230" r="120" fill="#f2f2f2" />
+  <circle cx="270" cy="210" r="34" fill="#d9d9d9" />
+  <circle cx="370" cy="210" r="34" fill="#d9d9d9" />
+  <circle cx="295" cy="222" r="8" fill="#2f2f2f" />
+  <circle cx="345" cy="222" r="8" fill="#2f2f2f" />
+  <ellipse cx="320" cy="262" rx="18" ry="12" fill="#b0b0b0" />
+  <path d="M298 288c12 12 36 12 48 0" stroke="#7a7a7a" stroke-width="6" fill="none" stroke-linecap="round" />
+  <circle cx="220" cy="150" r="50" fill="#efefef" />
+  <circle cx="420" cy="150" r="50" fill="#efefef" />
+  <text x="320" y="420" font-family="'Noto Sans', sans-serif" font-size="24" text-anchor="middle" fill="#6a6a9f">Cuddle Ready</text>
+</svg>
